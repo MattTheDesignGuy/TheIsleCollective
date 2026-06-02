@@ -65,29 +65,36 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-base/95 via-navy/80 to-ocean/50" />
 
-        {/* Watermark logo — left-anchored, fills section height */}
-        <div className="absolute left-0 inset-y-0 pointer-events-none select-none overflow-hidden">
-          <Image
-            src="/logos/ed712f47-d51f-458a-91d7-3502b922fc3c-cropped-dark.PNG"
-            alt=""
-            width={560}
-            height={800}
-            className="h-full w-auto opacity-[0.07] mix-blend-screen"
-            aria-hidden="true"
-          />
-        </div>
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-        <div className="relative max-w-4xl mx-auto text-center">
-          <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-4">AI-Powered Systems & Automation</p>
-          <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
-            We help businesses save time, reduce admin, and grow through AI-powered systems.
-          </h1>
-          <p className="text-white/70 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
-            Australian-based consultancy delivering practical AI automation so you can focus on the work that matters most.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
-            <Button href="/packages" variant="outline" size="lg">View Packages</Button>
+            {/* Left — content, left-aligned */}
+            <div>
+              <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-4">AI-Powered Systems & Automation</p>
+              <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
+                We help businesses save time, reduce admin, and grow through AI-powered systems.
+              </h1>
+              <p className="text-white/70 text-lg sm:text-xl max-w-xl mb-10">
+                Australian-based consultancy delivering practical AI automation so you can focus on the work that matters most.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+                <Button href="/packages" variant="outline" size="lg">View Packages</Button>
+              </div>
+            </div>
+
+            {/* Right — logo, visible but softened */}
+            <div className="hidden lg:flex items-center justify-end pr-8 pointer-events-none select-none">
+              <Image
+                src="/logos/ed712f47-d51f-458a-91d7-3502b922fc3c-cropped-dark.PNG"
+                alt=""
+                width={480}
+                height={680}
+                className="h-[70vh] w-auto opacity-20 mix-blend-screen"
+                aria-hidden="true"
+              />
+            </div>
+
           </div>
         </div>
       </section>
