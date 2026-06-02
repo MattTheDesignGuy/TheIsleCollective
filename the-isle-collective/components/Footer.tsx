@@ -16,15 +16,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <div className="bg-white rounded-xl px-3 py-2 inline-block mb-4">
-              <Image
-                src="/logos/logo-colour.png"
-                alt="The Isle Collective"
-                width={140}
-                height={52}
-                className="h-12 w-auto"
-              />
-            </div>
+            <Image
+              src="/logos/ed712f47-d51f-458a-91d7-3502b922fc3c-cropped-light.png"
+              alt="The Isle Collective"
+              width={140}
+              height={52}
+              className="h-14 w-auto mb-4"
+            />
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               We help businesses grow with clear strategy, strong execution, and AI-powered systems.
             </p>

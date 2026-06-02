@@ -72,6 +72,7 @@ const packages: Package[] = [
     tagline: "Remove repetitive administration from the business.",
     setupPrice: 5000,
     monthlyPrice: 695,
+    isPopular: true,
     inclusions: [
       "Client onboarding automation",
       "Project setup workflows",
@@ -106,7 +107,6 @@ const packages: Package[] = [
     setupPrice: null,
     monthlyPrice: 995,
     setupLabel: "From $10,000",
-    isPopular: true,
     inclusions: [
       "AI Audit & Roadmap",
       "Lead Management System",

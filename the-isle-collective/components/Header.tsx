@@ -38,18 +38,15 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo — white pill so the colour logo reads on dark header */}
           <Link href="/" className="flex-shrink-0">
-            <div className="bg-white rounded-xl px-3 py-1.5 shadow-sm">
-              <Image
-                src="/logos/logo-colour.png"
-                alt="The Isle Collective"
-                width={150}
-                height={56}
-                className="h-11 w-auto"
-                priority
-              />
-            </div>
+            <Image
+              src="/logos/ed712f47-d51f-458a-91d7-3502b922fc3c-cropped-light.png"
+              alt="The Isle Collective"
+              width={150}
+              height={56}
+              className="h-14 w-auto"
+              priority
+            />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
