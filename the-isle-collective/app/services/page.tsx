@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Users, Mail, Settings, Brain, BarChart3, Star } from "lucide-react";
 import Section from "@/components/Section";
@@ -13,22 +13,22 @@ const services = [
   {
     icon: BarChart3,
     title: "AI Lead Management",
-    description: "Never miss another enquiry. We build automated lead capture, categorisation, AI-generated response drafts and CRM integration â€” so every lead is processed and actioned without manual effort.",
+    description: "Never miss another enquiry. We build automated lead capture, categorisation, AI-generated response drafts and CRM integration so every lead is processed and actioned without manual effort.",
   },
   {
     icon: Mail,
     title: "AI Email & Communication Automation",
-    description: "Reduce inbox overwhelm. AI drafts emails, summarises enquiries, sends follow-up reminders and generates meeting notes â€” saving hours every week on communication management.",
+    description: "Reduce inbox overwhelm. AI drafts emails, summarises enquiries, sends follow-up reminders and generates meeting notes, saving hours every week on communication management.",
   },
   {
     icon: Settings,
     title: "AI Operations & Admin Automation",
-    description: "Eliminate repetitive admin. Client onboarding, project setup, internal task creation, reporting and team notifications â€” all automated and running in the background.",
+    description: "Eliminate repetitive admin. Client onboarding, project setup, internal task creation, reporting and team notifications, all automated and running in the background.",
   },
   {
     icon: Brain,
     title: "AI Knowledge Hub",
-    description: "Your own AI assistant trained on your business. Access SOPs, documentation and company knowledge instantly â€” reducing training time and improving team consistency.",
+    description: "Your own AI assistant trained on your business. Access SOPs, documentation and company knowledge instantly, reducing training time and improving team consistency.",
   },
   {
     icon: Users,
@@ -38,16 +38,16 @@ const services = [
   {
     icon: Star,
     title: "AI Content & Marketing Automation",
-    description: "Keep your brand presence consistent without the hours. AI-powered content workflows, social scheduling and marketing automation â€” done for you.",
+    description: "Keep your brand presence consistent without the hours. AI-powered content workflows, social scheduling and marketing automation, done for you.",
   },
 ];
 
 const addOns = [
-  { service: "Hourly Consulting", price: "$250â€“$400/hr", note: "Short-term consulting / ad-hoc advice" },
-  { service: "Project-Based Engagements", price: "$5,000â€“$25,000+", note: "Fixed-scope campaigns, partnerships, investor prep" },
+  { service: "Hourly Consulting", price: "$250 - $400/hr", note: "Short-term consulting / ad-hoc advice" },
+  { service: "Project-Based Engagements", price: "$5,000 - $25,000+", note: "Fixed-scope campaigns, partnerships, investor prep" },
   { service: "AI Audit", price: "From $1,500", note: "Full workflow review and roadmap" },
   { service: "AI Lead Management", price: "From $2,000", note: "Setup and first month" },
-  { service: "AI Communication Automation", price: "$1,500â€“$3,500+/month", note: "Ongoing management" },
+  { service: "AI Communication Automation", price: "$1,500 - $3,500+/month", note: "Ongoing management" },
   { service: "AI Operations Automation", price: "From $3,000", note: "Custom workflow builds" },
   { service: "AI Content & Marketing Automation", price: "From $2,500", note: "Content + scheduling systems" },
   { service: "Event / Brand Launch Support", price: "From $3,000", note: "Campaign planning + execution" },
@@ -74,7 +74,7 @@ export default function Services() {
             AI systems built to transform how you work
           </h1>
           <p className="text-white/70 text-lg leading-relaxed">
-            From lead management to full business transformation â€” practical AI solutions with real, measurable outcomes.
+            From lead management to full business transformation, practical AI solutions with real, measurable outcomes.
           </p>
         </div>
       </section>
@@ -154,7 +154,7 @@ export default function Services() {
         <div className="relative max-w-2xl mx-auto">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">Not sure where to start?</h2>
           <p className="text-white/60 text-lg mb-8">
-            Our AI Audit is the perfect first step â€” a clear picture of where automation can make the biggest difference.
+            Our AI Audit is the perfect first step, a clear picture of where automation can make the biggest difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>

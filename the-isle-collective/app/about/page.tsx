@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Search, Lightbulb, Wrench, Rocket, Scale, Check } from "lucide-react";
 import Section from "@/components/Section";
@@ -14,18 +14,18 @@ const steps = [
   { step: 1, title: "Audit", description: "We map your current workflows and identify where time is being lost.", icon: Search },
   { step: 2, title: "Identify", description: "Pinpoint the highest-impact AI opportunities for your specific business.", icon: Lightbulb },
   { step: 3, title: "Design", description: "We design automation systems built specifically for how you work.", icon: Wrench },
-  { step: 4, title: "Implement", description: "Hands-on build and integration â€” we do the heavy lifting.", icon: Rocket },
+  { step: 4, title: "Implement", description: "Hands-on build and integration — we do the heavy lifting.", icon: Rocket },
   { step: 5, title: "Scale", description: "Ongoing optimisation and strategy to keep growing.", icon: Scale },
 ];
 
 const benefits = [
-  "Save 10â€“20+ hours per week on admin",
+  "Save 10 to 20+ hours per week on admin",
   "Reduce manual data entry and costly errors",
   "Faster, more consistent client responses",
   "Improve team efficiency and communication",
   "Build scalable systems that grow with you",
-  "Empower your people â€” not replace them",
-  "Practical AI â€” no jargon, no complexity",
+  "Empower your people, not replace them",
+  "Practical AI — no jargon, no complexity",
   "Ongoing support and continuous optimisation",
 ];
 
@@ -50,7 +50,8 @@ export default function About() {
             We exist to help businesses reclaim their time
           </h1>
           <p className="text-white/70 text-lg leading-relaxed">
-            The Isle Collective is an Australian consultancy that designs and implements AI-powered systems for businesses ready to grow smarter â€” not harder.
+            The Isle Collective is an Australian consultancy that designs and implements AI-powered systems
+            for businesses ready to grow smarter, not harder.
           </p>
         </div>
       </section>
@@ -75,13 +76,15 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-white/60 leading-relaxed">
               <p>
-                We believe the best businesses aren&apos;t the ones that work the hardest â€” they&apos;re the ones that work the smartest. Every hour spent on manual admin is an hour not spent on clients, strategy, or growth.
+                We believe the best businesses are not the ones that work the hardest, they are the ones that work the
+                smartest. Every hour spent on manual admin is an hour not spent on clients, strategy, or growth.
               </p>
               <p>
-                That&apos;s where we come in. We design practical AI systems that handle the routine, the repetitive, and the time-consuming â€” so you can focus on the things that only you can do.
+                We design practical AI systems that handle the routine, the repetitive, and the time-consuming,
+                so you can focus on the things that only you can do.
               </p>
               <p>
-                We&apos;re not here to replace your team. We&apos;re here to give them superpowers.
+                {"We're not here to replace your team. We're here to give them superpowers."}
               </p>
             </div>
           </div>
@@ -100,9 +103,10 @@ export default function About() {
         <div className="absolute inset-0 bg-base/88" />
         <div className="relative max-w-3xl mx-auto text-center text-white">
           <blockquote className="font-heading font-medium text-2xl sm:text-3xl italic leading-relaxed text-white/90">
-            &ldquo;AI should feel like hiring the most efficient person you&apos;ve ever worked with â€” one who never forgets, never sleeps, and always follows the process.&rdquo;
+            &ldquo;AI should feel like hiring the most efficient person you have ever worked with, one who never
+            forgets, never sleeps, and always follows the process.&rdquo;
           </blockquote>
-          <div className="mt-6 text-sky/60 text-sm">â€” The Isle Collective</div>
+          <div className="mt-6 text-sky/60 text-sm">— The Isle Collective</div>
         </div>
       </div>
 
@@ -112,7 +116,7 @@ export default function About() {
           <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">How We Work</p>
           <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl">Our 5-Step Process</h2>
           <p className="text-white/50 mt-4 max-w-xl mx-auto">
-            A clear, structured approach â€” from first conversation to a fully running automation system.
+            A clear, structured approach from first conversation to a fully running automation system.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -157,10 +161,10 @@ export default function About() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.12)_0%,_transparent_70%)]" />
         <div className="relative max-w-2xl mx-auto">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
-            Ready to see what&apos;s possible?
+            Ready to see what is possible?
           </h2>
           <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
-            Book a free AI audit â€” no commitment, no jargon. Just a clear picture of where AI can unlock value in your business.
+            Book a free AI audit, no commitment, no jargon. Just a clear picture of where AI can unlock value in your business.
           </p>
           <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
         </div>

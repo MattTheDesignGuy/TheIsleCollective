@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Section from "@/components/Section";
 import PricingCard from "@/components/PricingCard";
@@ -18,23 +18,23 @@ const faqs = [
   },
   {
     question: "How long does implementation take?",
-    answer: "The AI Audit takes 1â€“2 weeks. Most implementation packages are live within 3â€“6 weeks depending on complexity. We provide a clear timeline upfront.",
+    answer: "The AI Audit takes 1 to 2 weeks. Most implementation packages are live within 3 to 6 weeks depending on complexity. We provide a clear timeline upfront.",
   },
   {
     question: "What if I want to start small and scale up?",
-    answer: "Start with the AI Audit & Roadmap â€” it's designed to give you a clear picture before committing to implementation. From there, you can add modules as you grow.",
+    answer: "Start with the AI Audit & Roadmap. It is designed to give you a clear picture before committing to implementation. From there, you can add modules as you grow.",
   },
   {
     question: "Do you work with any industry?",
-    answer: "We work across a wide range of industries, with particular experience in professional services, construction and design, legal, and hospitality. If you're unsure, book a free chat.",
+    answer: "We work across a wide range of industries, with particular experience in professional services, construction and design, legal, and hospitality. If you are unsure, book a free chat.",
   },
   {
     question: "What tools and platforms do you integrate with?",
-    answer: "We work with your existing tech stack â€” CRMs, email platforms, project management tools, and more. We handle the technical setup so you don't have to.",
+    answer: "We work with your existing tech stack, including CRMs, email platforms, project management tools, and more. We handle the technical setup so you do not have to.",
   },
   {
     question: "Is the monthly fee ongoing?",
-    answer: "Yes. Monthly retainers include ongoing optimisation, monitoring and improvements. AI systems need regular tuning to stay effective â€” we handle all of that.",
+    answer: "Yes. Monthly retainers include ongoing optimisation, monitoring and improvements. AI systems need regular tuning to stay effective, and we handle all of that.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Packages() {
         />
         <div className="absolute inset-0 bg-base/80 flex items-center justify-center">
           <p className="font-heading font-bold text-white text-xl sm:text-2xl text-center px-4">
-            All prices AUD Â· No lock-in contracts Â· Ongoing support included
+            All prices AUD &middot; No lock-in contracts &middot; Ongoing support included
           </p>
         </div>
       </div>
@@ -108,7 +108,7 @@ export default function Packages() {
             Not sure which package is right for you?
           </h2>
           <p className="text-white/60 text-lg mb-8">
-            Book a free AI audit â€” we&apos;ll map your workflows and recommend the right starting point.
+            Book a free AI audit and we will map your workflows and recommend the right starting point.
           </p>
           <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
         </div>
