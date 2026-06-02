@@ -109,7 +109,7 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <div className="bg-surface border border-white/10 rounded-2xl p-8 shadow-xl shadow-black/20">
+          <div className="bg-surface border border-white/10 rounded-2xl p-8 shadow-xl shadow-black/20 self-start">
             <h2 className="font-heading font-bold text-white text-xl mb-6">Send us a message</h2>
             <ContactForm />
           </div>

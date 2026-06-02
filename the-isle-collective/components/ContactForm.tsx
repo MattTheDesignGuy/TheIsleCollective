@@ -1,5 +1,6 @@
-﻿"use client";
+"use client";
 import { useState } from "react";
+import { Check } from "lucide-react";
 import Button from "./Button";
 
 interface FormState {
@@ -40,7 +41,7 @@ export default function ContactForm() {
     return (
       <div className="bg-ocean/10 border border-ocean/20 rounded-2xl p-10 text-center">
         <div className="w-14 h-14 rounded-full bg-ocean/20 border border-ocean/30 flex items-center justify-center mx-auto mb-4">
-          <span className="text-sky text-2xl">âœ“</span>
+          <Check size={24} className="text-sky" />
         </div>
         <h3 className="font-heading font-bold text-white text-xl mb-2">Message sent!</h3>
         <p className="text-white/60 text-sm">
@@ -110,8 +111,14 @@ export default function ContactForm() {
         {errors.message && <p className="text-accent text-xs mt-1">{errors.message}</p>}
       </div>
 
-      <Button type="submit" variant="primary" size="lg" className="w-full justify-center" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sendingâ€¦" : "Send Message"}
+      <Button
+        type="submit"
+        variant="primary"
+        size="lg"
+        className="w-full justify-center"
+        disabled={status === "submitting"}
+      >
+        {status === "submitting" ? "Sending..." : "Send Message"}
       </Button>
     </form>
   );
