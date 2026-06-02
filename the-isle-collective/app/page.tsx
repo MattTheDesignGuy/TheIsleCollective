@@ -211,17 +211,26 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Case Study Snapshot — with image background */}
+      {/* Case Study Snapshot — AJL Studio branded image */}
       <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <Image
-          src="/images/interior-design.jpg"
-          alt="Interior design studio workspace"
+          src="/images/ajl-portfolio.png"
+          alt="AJL Studio — interior design and architecture"
           fill
           className="object-cover object-center"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-navy/85" />
         <div className="relative max-w-3xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <Image
+              src="/images/ajl-logo.png"
+              alt="AJL Studio"
+              width={56}
+              height={46}
+              className="h-12 w-auto invert brightness-200 opacity-90"
+            />
+          </div>
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Case Study</p>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-6">
             AJ Lawson Designs / AJL Studio
