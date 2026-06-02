@@ -71,7 +71,7 @@ export default function Home() {
             {/* Left — content, left-aligned */}
             <div>
               <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-4">AI-Powered Systems & Automation</p>
-              <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
+              <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl leading-tight mb-6">
                 We help businesses save time, reduce admin, and grow through AI-powered systems.
               </h1>
               <p className="text-white/70 text-lg sm:text-xl max-w-xl mb-10">
