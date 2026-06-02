@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 import Section from "@/components/Section";
@@ -23,19 +23,19 @@ export default function Contact() {
           className="object-cover object-bottom"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-dark/95 via-navy/85 to-ocean/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-base/95 via-navy/85 to-ocean/60" />
         <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Get in Touch</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
             Let&apos;s talk about what&apos;s possible
           </h1>
           <p className="text-white/70 text-lg leading-relaxed">
-            Whether you&apos;re ready to start or just exploring — we&apos;d love to have a conversation.
+            Whether you&apos;re ready to start or just exploring â€” we&apos;d love to have a conversation.
           </p>
         </div>
       </section>
 
-      <Section className="bg-dark">
+      <Section className="bg-base">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Contact Info */}
           <div>
@@ -43,13 +43,13 @@ export default function Contact() {
               Book a Free AI Audit
             </h2>
             <p className="text-white/60 leading-relaxed mb-8">
-              Our free AI audit is a 45-minute conversation where we map your current workflows and identify where AI can save you the most time. No commitment, no jargon — just clarity.
+              Our free AI audit is a 45-minute conversation where we map your current workflows and identify where AI can save you the most time. No commitment, no jargon â€” just clarity.
             </p>
 
             <div className="space-y-3 mb-10">
               <a
                 href="mailto:hello@theislecollective.co"
-                className="flex items-center gap-4 bg-dark-surface border border-white/8 rounded-xl px-5 py-4 hover:border-ocean/40 hover:shadow-lg hover:shadow-ocean/5 transition-all group"
+                className="flex items-center gap-4 bg-surface border border-white/8 rounded-xl px-5 py-4 hover:border-ocean/40 hover:shadow-lg hover:shadow-ocean/5 transition-all group"
               >
                 <div className="w-10 h-10 rounded-lg bg-ocean/15 border border-ocean/20 flex items-center justify-center group-hover:bg-ocean/25 transition-colors">
                   <Mail size={18} className="text-sky" />
@@ -61,7 +61,7 @@ export default function Contact() {
               </a>
               <a
                 href="tel:0431027770"
-                className="flex items-center gap-4 bg-dark-surface border border-white/8 rounded-xl px-5 py-4 hover:border-ocean/40 hover:shadow-lg hover:shadow-ocean/5 transition-all group"
+                className="flex items-center gap-4 bg-surface border border-white/8 rounded-xl px-5 py-4 hover:border-ocean/40 hover:shadow-lg hover:shadow-ocean/5 transition-all group"
               >
                 <div className="w-10 h-10 rounded-lg bg-ocean/15 border border-ocean/20 flex items-center justify-center group-hover:bg-ocean/25 transition-colors">
                   <Phone size={18} className="text-sky" />
@@ -73,13 +73,13 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="bg-dark-surface border border-white/8 rounded-2xl p-6 mb-8">
+            <div className="bg-surface border border-white/8 rounded-2xl p-6 mb-8">
               <h3 className="font-heading font-semibold text-white mb-3">What to expect</h3>
               <ul className="space-y-2 text-sm text-white/50">
-                <li className="flex items-center gap-2"><span className="text-ocean">✓</span> Response within one business day</li>
-                <li className="flex items-center gap-2"><span className="text-ocean">✓</span> 45-minute audit call — no pitch, just value</li>
-                <li className="flex items-center gap-2"><span className="text-ocean">✓</span> Written summary of AI opportunities</li>
-                <li className="flex items-center gap-2"><span className="text-ocean">✓</span> No obligation to proceed</li>
+                <li className="flex items-center gap-2"><span className="text-ocean">âœ“</span> Response within one business day</li>
+                <li className="flex items-center gap-2"><span className="text-ocean">âœ“</span> 45-minute audit call â€” no pitch, just value</li>
+                <li className="flex items-center gap-2"><span className="text-ocean">âœ“</span> Written summary of AI opportunities</li>
+                <li className="flex items-center gap-2"><span className="text-ocean">âœ“</span> No obligation to proceed</li>
               </ul>
             </div>
 
@@ -91,7 +91,7 @@ export default function Contact() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/70 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-base/70 to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <p className="font-heading font-semibold text-white text-sm">Ready when you are.</p>
               </div>
@@ -99,7 +99,7 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <div className="bg-dark-surface border border-white/10 rounded-2xl p-8 shadow-xl shadow-black/20">
+          <div className="bg-surface border border-white/10 rounded-2xl p-8 shadow-xl shadow-black/20">
             <h2 className="font-heading font-bold text-white text-xl mb-6">Send us a message</h2>
             <ContactForm />
           </div>

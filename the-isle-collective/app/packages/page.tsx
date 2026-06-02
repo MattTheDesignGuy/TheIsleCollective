@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Section from "@/components/Section";
 import PricingCard from "@/components/PricingCard";
@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     question: "How long does implementation take?",
-    answer: "The AI Audit takes 1–2 weeks. Most implementation packages are live within 3–6 weeks depending on complexity. We provide a clear timeline upfront.",
+    answer: "The AI Audit takes 1â€“2 weeks. Most implementation packages are live within 3â€“6 weeks depending on complexity. We provide a clear timeline upfront.",
   },
   {
     question: "What if I want to start small and scale up?",
-    answer: "Start with the AI Audit & Roadmap — it's designed to give you a clear picture before committing to implementation. From there, you can add modules as you grow.",
+    answer: "Start with the AI Audit & Roadmap â€” it's designed to give you a clear picture before committing to implementation. From there, you can add modules as you grow.",
   },
   {
     question: "Do you work with any industry?",
@@ -30,11 +30,11 @@ const faqs = [
   },
   {
     question: "What tools and platforms do you integrate with?",
-    answer: "We work with your existing tech stack — CRMs, email platforms, project management tools, and more. We handle the technical setup so you don't have to.",
+    answer: "We work with your existing tech stack â€” CRMs, email platforms, project management tools, and more. We handle the technical setup so you don't have to.",
   },
   {
     question: "Is the monthly fee ongoing?",
-    answer: "Yes. Monthly retainers include ongoing optimisation, monitoring and improvements. AI systems need regular tuning to stay effective — we handle all of that.",
+    answer: "Yes. Monthly retainers include ongoing optimisation, monitoring and improvements. AI systems need regular tuning to stay effective â€” we handle all of that.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function Packages() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-dark/95 via-navy/85 to-ocean/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-base/95 via-navy/85 to-ocean/60" />
         <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Pricing</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
@@ -65,7 +65,7 @@ export default function Packages() {
       </section>
 
       {/* Packages Grid */}
-      <Section className="bg-dark">
+      <Section className="bg-base">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
           {packages.map((pkg) => (
             <PricingCard key={pkg.id} pkg={pkg} />
@@ -82,15 +82,15 @@ export default function Packages() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-dark/80 flex items-center justify-center">
+        <div className="absolute inset-0 bg-base/80 flex items-center justify-center">
           <p className="font-heading font-bold text-white text-xl sm:text-2xl text-center px-4">
-            All prices AUD · No lock-in contracts · Ongoing support included
+            All prices AUD Â· No lock-in contracts Â· Ongoing support included
           </p>
         </div>
       </div>
 
       {/* FAQ */}
-      <Section className="bg-dark-surface border-y border-white/8">
+      <Section className="bg-surface border-y border-white/8">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">FAQ</p>
@@ -101,14 +101,14 @@ export default function Packages() {
       </Section>
 
       {/* CTA */}
-      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center bg-dark border-t border-white/8">
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center bg-base border-t border-white/8">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.12)_0%,_transparent_70%)]" />
         <div className="relative max-w-2xl mx-auto">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
             Not sure which package is right for you?
           </h2>
           <p className="text-white/60 text-lg mb-8">
-            Book a free AI audit — we&apos;ll map your workflows and recommend the right starting point.
+            Book a free AI audit â€” we&apos;ll map your workflows and recommend the right starting point.
           </p>
           <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
         </div>

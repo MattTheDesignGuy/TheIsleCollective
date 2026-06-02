@@ -32,21 +32,24 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-dark/98 shadow-lg shadow-black/40 border-b border-white/5"
-          : "bg-dark/80 backdrop-blur-md"
+          ? "bg-base/98 shadow-lg shadow-black/40 border-b border-white/5"
+          : "bg-base/80 backdrop-blur-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+          {/* Logo — white pill so the colour logo reads on dark header */}
           <Link href="/" className="flex-shrink-0">
-            <Image
-              src="/logos/FullLogo_NoBuffer.webp"
-              alt="The Isle Collective"
-              width={160}
-              height={60}
-              className="h-12 w-auto [filter:brightness(0)_invert(1)]"
-              priority
-            />
+            <div className="bg-white rounded-xl px-3 py-1.5 shadow-sm">
+              <Image
+                src="/logos/logo-colour.png"
+                alt="The Isle Collective"
+                width={150}
+                height={56}
+                className="h-11 w-auto"
+                priority
+              />
+            </div>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
@@ -82,7 +85,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden bg-dark-surface border-t border-white/10 px-4 pb-6 pt-4 shadow-xl">
+        <div className="lg:hidden bg-surface border-t border-white/10 px-4 pb-6 pt-4 shadow-xl">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link

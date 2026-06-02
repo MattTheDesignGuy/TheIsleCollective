@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+﻿import { Check } from "lucide-react";
 import type { Package } from "@/lib/packages";
 import Button from "./Button";
 
@@ -14,7 +14,7 @@ export default function PricingCard({ pkg }: PricingCardProps) {
       className={`relative rounded-2xl flex flex-col h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${
         isPopular
           ? "bg-ocean/20 border border-ocean/60 shadow-xl shadow-ocean/10 ring-1 ring-ocean/30"
-          : "bg-dark-surface border border-white/10 shadow-md hover:border-white/20"
+          : "bg-surface border border-white/10 shadow-md hover:border-white/20"
       }`}
     >
       {isPopular && (

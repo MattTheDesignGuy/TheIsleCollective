@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 
 export const metadata: Metadata = {
-  title: "Case Study — AJL Studio",
+  title: "Case Study â€” AJL Studio",
   description: "How The Isle Collective transformed AJ Lawson Designs with AI-powered lead management and workflow automation.",
 };
 
@@ -20,8 +20,8 @@ const systemsImplemented = [
 ];
 
 const outcomes = [
-  { stat: "↓ 70%", label: "Reduction in admin time" },
-  { stat: "3×", label: "Improvement in response consistency" },
+  { stat: "â†“ 70%", label: "Reduction in admin time" },
+  { stat: "3Ã—", label: "Improvement in response consistency" },
   { stat: "100%", label: "Leads captured and actioned" },
   { stat: "< 5min", label: "Average lead response time" },
 ];
@@ -30,11 +30,11 @@ export default function CaseStudy() {
   return (
     <div className="pt-20">
 
-      {/* Hero — AJL Studio branded image */}
+      {/* Hero â€” AJL Studio branded image */}
       <section className="relative text-white overflow-hidden min-h-[75vh] flex items-end">
         <Image
           src="/images/ajl-portfolio.png"
-          alt="AJL Studio — interior design and architecture"
+          alt="AJL Studio â€” interior design and architecture"
           fill
           priority
           className="object-cover object-center"
@@ -53,7 +53,7 @@ export default function CaseStudy() {
               </h1>
               <p className="text-white/70 text-lg mt-3">Interior Design & Architecture Studio, Australia</p>
             </div>
-            {/* AJL monogram logo — white version via invert */}
+            {/* AJL monogram logo â€” white version via invert */}
             <div className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <Image
                 src="/images/ajl-logo.png"
@@ -79,8 +79,8 @@ export default function CaseStudy() {
         </div>
       </section>
 
-      {/* Problem — text left, real interior photo right */}
-      <Section className="bg-dark">
+      {/* Problem â€” text left, real interior photo right */}
+      <Section className="bg-base">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">The Challenge</p>
@@ -89,20 +89,20 @@ export default function CaseStudy() {
             </h2>
             <div className="space-y-4 text-white/60 leading-relaxed">
               <p>
-                AJL Studio was growing — and that growth was creating a new problem. As a highly regarded interior design and architecture practice, enquiries were coming in from multiple channels: website forms, email, Instagram DMs, and referrals. Without a system to manage them, leads were falling through the cracks.
+                AJL Studio was growing â€” and that growth was creating a new problem. As a highly regarded interior design and architecture practice, enquiries were coming in from multiple channels: website forms, email, Instagram DMs, and referrals. Without a system to manage them, leads were falling through the cracks.
               </p>
               <p>
                 The team was spending hours each week manually reading, categorising, and responding to enquiries. Responses were inconsistent, follow-ups were missed, and there was no reliable way to know which leads were hot and which could wait.
               </p>
               <p>
-                They needed a scalable solution — one that worked in the background so the team could focus on design, not admin.
+                They needed a scalable solution â€” one that worked in the background so the team could focus on design, not admin.
               </p>
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "3/4" }}>
             <Image
               src="/images/ajl-interior.jpg"
-              alt="AJL Studio interior design project — curved staircase and open living"
+              alt="AJL Studio interior design project â€” curved staircase and open living"
               fill
               className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -112,8 +112,8 @@ export default function CaseStudy() {
         </div>
       </Section>
 
-      {/* Solution — founder photo left, checklist right */}
-      <Section className="bg-dark-surface border-y border-white/8">
+      {/* Solution â€” founder photo left, checklist right */}
+      <Section className="bg-surface border-y border-white/8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "3/4" }}>
             <Image
@@ -126,7 +126,7 @@ export default function CaseStudy() {
             <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent" />
             {/* Overlay badge */}
             <div className="absolute bottom-5 left-5 right-5">
-              <div className="bg-dark/80 backdrop-blur-sm rounded-xl px-5 py-3 flex items-center gap-3 border border-white/10">
+              <div className="bg-base/80 backdrop-blur-sm rounded-xl px-5 py-3 flex items-center gap-3 border border-white/10">
                 <Image
                   src="/images/ajl-logo.png"
                   alt="AJL Studio"
@@ -147,11 +147,11 @@ export default function CaseStudy() {
               An end-to-end AI lead management system
             </h2>
             <p className="text-white/60 leading-relaxed mb-6">
-              The Isle Collective designed and built a complete AI-powered lead management and communication system, integrated with the studio&apos;s existing tools. No new software to learn — just automation working quietly in the background.
+              The Isle Collective designed and built a complete AI-powered lead management and communication system, integrated with the studio&apos;s existing tools. No new software to learn â€” just automation working quietly in the background.
             </p>
             <ul className="space-y-3">
               {systemsImplemented.map((item) => (
-                <li key={item} className="flex items-start gap-3 bg-dark/60 border border-white/8 rounded-xl px-5 py-3.5">
+                <li key={item} className="flex items-start gap-3 bg-base/60 border border-white/8 rounded-xl px-5 py-3.5">
                   <Check size={16} className="text-ocean mt-0.5 flex-shrink-0" />
                   <span className="text-white/70 text-sm">{item}</span>
                 </li>
@@ -162,7 +162,7 @@ export default function CaseStudy() {
       </Section>
 
       {/* Outcome + Testimonial */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-dark">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-base">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -172,7 +172,7 @@ export default function CaseStudy() {
               </h2>
               <div className="space-y-4 text-white/60 leading-relaxed">
                 <p>
-                  Within weeks of implementation, AJL Studio had transformed its operations. Every enquiry — regardless of where it came from — was automatically captured, summarised, and categorised. The team received clean, prioritised lead summaries instead of raw inbox chaos.
+                  Within weeks of implementation, AJL Studio had transformed its operations. Every enquiry â€” regardless of where it came from â€” was automatically captured, summarised, and categorised. The team received clean, prioritised lead summaries instead of raw inbox chaos.
                 </p>
                 <p>
                   AI-drafted response templates meant replies went out in minutes rather than hours. Follow-ups were automated. Nothing fell through the cracks. And the whole system continued to improve with monthly optimisation sessions.
@@ -193,7 +193,7 @@ export default function CaseStudy() {
               <div className="relative p-8 h-full flex flex-col justify-between">
                 <div className="text-5xl text-sky/40 font-heading leading-none">&ldquo;</div>
                 <blockquote className="font-heading font-medium text-white text-lg italic leading-relaxed">
-                  The system has completely changed how we handle enquiries. We used to dread Monday mornings — now everything is already organised and ready to action. It&apos;s like having an extra team member who never sleeps.
+                  The system has completely changed how we handle enquiries. We used to dread Monday mornings â€” now everything is already organised and ready to action. It&apos;s like having an extra team member who never sleeps.
                 </blockquote>
                 <div className="flex items-center gap-3 mt-6">
                   <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 border-2 border-sky/40">
@@ -217,7 +217,7 @@ export default function CaseStudy() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center bg-dark-surface border-t border-white/8">
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center bg-surface border-t border-white/8">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.12)_0%,_transparent_70%)]" />
         <div className="relative max-w-2xl mx-auto">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">

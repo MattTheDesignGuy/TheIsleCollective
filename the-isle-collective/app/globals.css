@@ -8,9 +8,8 @@
   --color-mist: #E3F0FA;
   --color-charcoal: #1A1F2B;
   --color-accent: #E8964A;
-  --color-dark: #070E1C;
-  --color-dark-surface: #0D1728;
-  --color-dark-border: rgba(255, 255, 255, 0.08);
+  --color-base: #070E1C;
+  --color-surface: #0D1728;
 
   --font-heading: var(--font-poppins);
   --font-body: var(--font-inter);

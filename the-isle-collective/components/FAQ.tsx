@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -17,7 +17,7 @@ export default function FAQ({ items }: FAQProps) {
   return (
     <div className="space-y-3">
       {items.map((item, i) => (
-        <div key={i} className="border border-white/10 rounded-xl overflow-hidden bg-dark-surface hover:border-white/20 transition-colors">
+        <div key={i} className="border border-white/10 rounded-xl overflow-hidden bg-surface hover:border-white/20 transition-colors">
           <button
             className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 font-heading font-medium text-white hover:text-sky transition-colors"
             onClick={() => setOpenIndex(openIndex === i ? null : i)}

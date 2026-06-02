@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Clock, TrendingUp, Mail, BarChart3, Search, Lightbulb, Wrench, Rocket, Scale, Check, ArrowRight } from "lucide-react";
 import Section from "@/components/Section";
@@ -9,12 +9,12 @@ import Button from "@/components/Button";
 import packages from "@/lib/packages";
 
 export const metadata: Metadata = {
-  title: "The Isle Collective — AI-Powered Systems & Automation",
+  title: "The Isle Collective â€” AI-Powered Systems & Automation",
   description: "We help Australian businesses save time, reduce admin and grow through AI-powered systems and automation.",
 };
 
 const valueProps = [
-  { icon: Clock, title: "Save 10–20+ hrs/week", description: "Reclaim your time by automating repetitive tasks." },
+  { icon: Clock, title: "Save 10â€“20+ hrs/week", description: "Reclaim your time by automating repetitive tasks." },
   { icon: BarChart3, title: "Reduce manual admin", description: "Let systems handle the paperwork so you don't have to." },
   { icon: Mail, title: "Faster client response", description: "AI-assisted communication keeps every lead warm." },
   { icon: TrendingUp, title: "Scalable growth", description: "Build systems that grow with your business, not against it." },
@@ -24,7 +24,7 @@ const processSteps = [
   { step: 1, title: "Audit", description: "We map your current workflows and identify where time is lost.", icon: Search },
   { step: 2, title: "Identify", description: "Pinpoint the highest-impact AI opportunities for your business.", icon: Lightbulb },
   { step: 3, title: "Design", description: "We design automation systems built specifically for how you work.", icon: Wrench },
-  { step: 4, title: "Implement", description: "Hands-on build and integration — we do the heavy lifting.", icon: Rocket },
+  { step: 4, title: "Implement", description: "Hands-on build and integration â€” we do the heavy lifting.", icon: Rocket },
   { step: 5, title: "Scale", description: "Ongoing optimisation and strategy to keep growing.", icon: Scale },
 ];
 
@@ -37,12 +37,12 @@ const deliverables = [
 ];
 
 const benefits = [
-  "Save 10–20+ hours per week on admin",
+  "Save 10â€“20+ hours per week on admin",
   "Reduce manual data entry and errors",
   "Faster, more consistent client responses",
   "Improve team efficiency and clarity",
   "Build scalable systems that grow with you",
-  "We empower your people — not replace them",
+  "We empower your people â€” not replace them",
 ];
 
 const featuredPackages = packages.filter((p) =>
@@ -57,20 +57,20 @@ export default function Home() {
       <section className="relative text-white py-36 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[85vh] flex items-center">
         <Image
           src="/images/hero-ocean.jpg"
-          alt="Coastal ocean — calm and expansive"
+          alt="Coastal ocean â€” calm and expansive"
           fill
           priority
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-dark/95 via-navy/80 to-ocean/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-base/95 via-navy/80 to-ocean/50" />
         <div className="relative max-w-4xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-4">AI-Powered Systems & Automation</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
             We help businesses save time, reduce admin, and grow through AI-powered systems.
           </h1>
           <p className="text-white/70 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
-            Australian-based consultancy delivering practical AI automation — so you can focus on the work that matters most.
+            Australian-based consultancy delivering practical AI automation â€” so you can focus on the work that matters most.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* Value Props */}
-      <Section className="bg-dark-surface border-y border-white/8">
+      <Section className="bg-surface border-y border-white/8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {valueProps.map((vp) => (
             <ValueProp key={vp.title} {...vp} />
@@ -89,7 +89,7 @@ export default function Home() {
       </Section>
 
       {/* Philosophy */}
-      <Section className="bg-dark">
+      <Section className="bg-base">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Our Philosophy</p>
@@ -97,7 +97,7 @@ export default function Home() {
               Automate the repetitive.<br />Amplify the valuable.
             </h2>
             <p className="text-white/60 text-lg leading-relaxed mb-6">
-              We believe every business deserves to reclaim its time. The Isle Collective designs AI-powered systems that handle the routine — freeing you and your team to focus on the relationships, creativity, and strategy that truly drive growth.
+              We believe every business deserves to reclaim its time. The Isle Collective designs AI-powered systems that handle the routine â€” freeing you and your team to focus on the relationships, creativity, and strategy that truly drive growth.
             </p>
             <p className="text-white/60 text-lg leading-relaxed">
               We&apos;re here to empower people, not replace them.
@@ -111,13 +111,13 @@ export default function Home() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-base/50 to-transparent" />
           </div>
         </div>
       </Section>
 
       {/* Process */}
-      <Section className="bg-dark-surface border-y border-white/8">
+      <Section className="bg-surface border-y border-white/8">
         <div className="text-center mb-12">
           <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">How It Works</p>
           <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl">Our Process</h2>
@@ -138,7 +138,7 @@ export default function Home() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-dark/75 flex items-center justify-center">
+        <div className="absolute inset-0 bg-base/75 flex items-center justify-center">
           <p className="font-heading font-extrabold text-white text-2xl sm:text-4xl text-center px-4">
             Practical AI. Real outcomes. Zero jargon.
           </p>
@@ -146,7 +146,7 @@ export default function Home() {
       </div>
 
       {/* What We Deliver */}
-      <Section className="bg-dark">
+      <Section className="bg-base">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">What We Deliver</p>
@@ -182,12 +182,12 @@ export default function Home() {
       </Section>
 
       {/* Featured Packages */}
-      <Section className="bg-dark-surface border-y border-white/8">
+      <Section className="bg-surface border-y border-white/8">
         <div className="text-center mb-12">
           <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Flexible Pricing</p>
           <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-4">Popular Packages</h2>
           <p className="text-white/50 max-w-xl mx-auto">
-            Flexible packages built around your stage of growth — start with an audit or go all-in.
+            Flexible packages built around your stage of growth â€” start with an audit or go all-in.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
@@ -200,16 +200,16 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Case Study — AJL branded image */}
+      {/* Case Study â€” AJL branded image */}
       <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <Image
           src="/images/ajl-portfolio.png"
-          alt="AJL Studio — interior design and architecture"
+          alt="AJL Studio â€” interior design and architecture"
           fill
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-dark/85" />
+        <div className="absolute inset-0 bg-base/85" />
         <div className="relative max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center mb-6">
             <Image
@@ -225,12 +225,12 @@ export default function Home() {
             AJ Lawson Designs / AJL Studio
           </h2>
           <p className="text-white/70 text-lg mb-8 leading-relaxed">
-            A leading design studio was drowning in manual lead management and inbox chaos. We implemented an end-to-end AI system — automated lead qualification, AI-drafted email responses, and workflow automation — transforming their operations.
+            A leading design studio was drowning in manual lead management and inbox chaos. We implemented an end-to-end AI system â€” automated lead qualification, AI-drafted email responses, and workflow automation â€” transforming their operations.
           </p>
           <div className="grid grid-cols-3 gap-6 mb-10">
             {[
-              { stat: "↓ 70%", label: "Admin time reduced" },
-              { stat: "↑ 3×", label: "Response consistency" },
+              { stat: "â†“ 70%", label: "Admin time reduced" },
+              { stat: "â†‘ 3Ã—", label: "Response consistency" },
               { stat: "100%", label: "Leads captured & actioned" },
             ].map((item) => (
               <div key={item.label} className="text-center">
@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* Closing CTA */}
-      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center overflow-hidden bg-dark-surface border-t border-white/8">
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center overflow-hidden bg-surface border-t border-white/8">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.15)_0%,_transparent_70%)]" />
         <div className="relative max-w-2xl mx-auto">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">

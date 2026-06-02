@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import Button from "./Button";
 
@@ -34,13 +34,13 @@ export default function ContactForm() {
   }
 
   const field =
-    "w-full px-4 py-3 rounded-xl border border-white/10 bg-dark/60 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-ocean focus:border-ocean transition text-sm";
+    "w-full px-4 py-3 rounded-xl border border-white/10 bg-base/60 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-ocean focus:border-ocean transition text-sm";
 
   if (status === "success") {
     return (
       <div className="bg-ocean/10 border border-ocean/20 rounded-2xl p-10 text-center">
         <div className="w-14 h-14 rounded-full bg-ocean/20 border border-ocean/30 flex items-center justify-center mx-auto mb-4">
-          <span className="text-sky text-2xl">✓</span>
+          <span className="text-sky text-2xl">âœ“</span>
         </div>
         <h3 className="font-heading font-bold text-white text-xl mb-2">Message sent!</h3>
         <p className="text-white/60 text-sm">
@@ -111,7 +111,7 @@ export default function ContactForm() {
       </div>
 
       <Button type="submit" variant="primary" size="lg" className="w-full justify-center" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending…" : "Send Message"}
+        {status === "submitting" ? "Sendingâ€¦" : "Send Message"}
       </Button>
     </form>
   );
