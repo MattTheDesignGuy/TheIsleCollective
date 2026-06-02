@@ -45,8 +45,8 @@ export default function Packages() {
       {/* Hero */}
       <section className="relative text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[55vh] flex items-center">
         <Image
-          src="/images/business-growth.jpg"
-          alt="Business growth strategy"
+          src="/images/pricing-hero-b.jpg"
+          alt="City skyline and ocean horizon"
           fill
           priority
           className="object-cover object-center"
