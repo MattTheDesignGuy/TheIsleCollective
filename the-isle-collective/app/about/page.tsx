@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Search, Lightbulb, Wrench, Rocket, Scale, Check } from "lucide-react";
 import Section from "@/components/Section";
 import ProcessStep from "@/components/ProcessStep";
@@ -31,9 +32,18 @@ const benefits = [
 export default function About() {
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-navy to-ocean text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* Hero with image */}
+      <section className="relative text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[60vh] flex items-center">
+        <Image
+          src="/images/team-collab.jpg"
+          alt="Team collaborating on strategy"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/80 to-ocean/70" />
+        <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">About Us</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
             We exist to help businesses reclaim their time
@@ -44,10 +54,20 @@ export default function About() {
         </div>
       </section>
 
-      {/* Philosophy */}
+      {/* Philosophy — split with image */}
       <Section id="philosophy" className="bg-white">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl order-2 lg:order-1">
+            <Image
+              src="/images/office-modern.jpg"
+              alt="Modern collaborative workspace"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent" />
+          </div>
+          <div className="order-1 lg:order-2">
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Our Philosophy</p>
             <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
               Automate the repetitive.<br />Amplify the valuable.
@@ -64,14 +84,26 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="bg-mist rounded-2xl p-8">
-            <blockquote className="text-navy font-heading font-medium text-xl leading-relaxed italic">
-              &ldquo;AI should feel like hiring the most efficient person you&apos;ve ever worked with — one who never forgets, never sleeps, and always follows the process.&rdquo;
-            </blockquote>
-            <div className="mt-6 text-charcoal/50 text-sm">— The Isle Collective</div>
-          </div>
         </div>
       </Section>
+
+      {/* Pull quote banner */}
+      <div className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <Image
+          src="/images/hero-ocean.jpg"
+          alt="Calm coastal waters"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-navy/80" />
+        <div className="relative max-w-3xl mx-auto text-center text-white">
+          <blockquote className="font-heading font-medium text-2xl sm:text-3xl italic leading-relaxed">
+            &ldquo;AI should feel like hiring the most efficient person you&apos;ve ever worked with — one who never forgets, never sleeps, and always follows the process.&rdquo;
+          </blockquote>
+          <div className="mt-6 text-sky/70 text-sm">— The Isle Collective</div>
+        </div>
+      </div>
 
       {/* Process */}
       <Section id="process" className="bg-mist">
@@ -91,20 +123,30 @@ export default function About() {
 
       {/* Why Us */}
       <Section id="why-us" className="bg-white">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Why Choose Us</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl">
+            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-8">
               Built for results, not complexity
             </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {benefits.map((b) => (
+                <div key={b} className="flex items-start gap-3 bg-mist rounded-xl px-5 py-4">
+                  <Check size={18} className="text-ocean mt-0.5 flex-shrink-0" />
+                  <span className="text-charcoal/80 text-sm">{b}</span>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {benefits.map((b) => (
-              <div key={b} className="flex items-start gap-3 bg-mist rounded-xl px-5 py-4">
-                <Check size={18} className="text-ocean mt-0.5 flex-shrink-0" />
-                <span className="text-charcoal/80 text-sm">{b}</span>
-              </div>
-            ))}
+          <div className="relative rounded-2xl overflow-hidden aspect-square shadow-xl">
+            <Image
+              src="/images/business-growth.jpg"
+              alt="Business growth and strategy"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
           </div>
         </div>
       </Section>

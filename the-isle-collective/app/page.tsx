@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Clock, TrendingUp, Mail, BarChart3, Search, Lightbulb, Wrench, Rocket, Scale, Check, ArrowRight } from "lucide-react";
 import Section from "@/components/Section";
@@ -53,11 +54,20 @@ export default function Home() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-navy-dark via-navy to-ocean text-white py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-sky blur-3xl translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-ocean blur-3xl -translate-x-1/2 translate-y-1/2" />
-        </div>
+      <section className="relative text-white py-36 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[80vh] flex items-center">
+        <Image
+          src="/images/hero-ocean.jpg"
+          alt="Coastal ocean — calm and expansive"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        {/* Navy gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/90 via-navy/80 to-ocean/70" />
+        {/* Subtle texture overlay */}
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--color-sky)_0%,_transparent_60%)]" />
+
         <div className="relative max-w-4xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-4">AI-Powered Systems & Automation</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
@@ -86,16 +96,31 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Philosophy */}
+      {/* Philosophy — split with image */}
       <Section className="bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Our Philosophy</p>
-          <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
-            Automate the repetitive.<br />Amplify the valuable.
-          </h2>
-          <p className="text-charcoal/70 text-lg leading-relaxed">
-            We believe every business deserves to reclaim its time. The Isle Collective designs AI-powered systems that handle the routine — freeing you and your team to focus on the relationships, creativity, and strategy that truly drive growth. We&apos;re here to empower people, not replace them.
-          </p>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Our Philosophy</p>
+            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+              Automate the repetitive.<br />Amplify the valuable.
+            </h2>
+            <p className="text-charcoal/70 text-lg leading-relaxed mb-6">
+              We believe every business deserves to reclaim its time. The Isle Collective designs AI-powered systems that handle the routine — freeing you and your team to focus on the relationships, creativity, and strategy that truly drive growth.
+            </p>
+            <p className="text-charcoal/70 text-lg leading-relaxed">
+              We&apos;re here to empower people, not replace them.
+            </p>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
+            <Image
+              src="/images/office-modern.jpg"
+              alt="Modern collaborative workspace"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent" />
+          </div>
         </div>
       </Section>
 
@@ -112,7 +137,24 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* What We Deliver */}
+      {/* What We Deliver — full-bleed image banner between */}
+      <div className="relative h-64 sm:h-80 overflow-hidden">
+        <Image
+          src="/images/ai-tech.jpg"
+          alt="AI technology and automation"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-navy/70 flex items-center justify-center">
+          <div className="text-center text-white px-4">
+            <p className="font-heading font-extrabold text-2xl sm:text-4xl">
+              Practical AI. Real outcomes. Zero jargon.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <Section className="bg-white">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -169,9 +211,17 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Case Study Snapshot */}
-      <Section className="bg-navy text-white">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* Case Study Snapshot — with image background */}
+      <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <Image
+          src="/images/interior-design.jpg"
+          alt="Interior design studio workspace"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-navy/85" />
+        <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Case Study</p>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-6">
             AJ Lawson Designs / AJL Studio
@@ -195,7 +245,7 @@ export default function Home() {
             Read the Full Case Study
           </Button>
         </div>
-      </Section>
+      </section>
 
       {/* Closing CTA */}
       <Section className="bg-gradient-to-r from-ocean to-navy text-white text-center">

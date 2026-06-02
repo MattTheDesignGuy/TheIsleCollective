@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Users, Mail, Settings, Brain, BarChart3, Star } from "lucide-react";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
@@ -61,9 +62,18 @@ const addOns = [
 export default function Services() {
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-navy to-ocean text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* Hero with image */}
+      <section className="relative text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[60vh] flex items-center">
+        <Image
+          src="/images/workflow-automation.jpg"
+          alt="Workflow and automation technology"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/75 to-ocean/70" />
+        <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Our Services</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
             AI systems built to transform how you work
@@ -92,6 +102,27 @@ export default function Services() {
           ))}
         </div>
       </Section>
+
+      {/* Mid-page image banner */}
+      <div className="relative h-72 sm:h-96 overflow-hidden">
+        <Image
+          src="/images/abstract-tech.jpg"
+          alt="Abstract technology and data visualisation"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/85 to-ocean/70 flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <p className="font-heading font-extrabold text-2xl sm:text-4xl max-w-xl">
+              Every system we build is designed to pay for itself.
+            </p>
+            <p className="text-white/70 mt-3 text-lg max-w-lg">
+              Real ROI, measured in hours saved, leads converted, and admin eliminated.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Add-On Services Table */}
       <Section className="bg-mist">

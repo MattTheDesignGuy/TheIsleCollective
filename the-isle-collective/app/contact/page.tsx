@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 import Section from "@/components/Section";
 import ContactForm from "@/components/ContactForm";
@@ -11,9 +12,18 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-navy to-ocean text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* Hero with ocean image */}
+      <section className="relative text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[55vh] flex items-center">
+        <Image
+          src="/images/hero-ocean.jpg"
+          alt="Calm coastal waters"
+          fill
+          priority
+          className="object-cover object-bottom"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/92 via-navy/80 to-ocean/70" />
+        <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Get in Touch</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
             Let&apos;s talk about what&apos;s possible
@@ -62,14 +72,29 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 border border-mist">
-              <h3 className="font-heading font-semibold text-navy mb-2">What to expect</h3>
+            <div className="bg-white rounded-2xl p-6 border border-mist mb-8">
+              <h3 className="font-heading font-semibold text-navy mb-3">What to expect</h3>
               <ul className="space-y-2 text-sm text-charcoal/70">
                 <li>✓ Response within one business day</li>
                 <li>✓ 45-minute audit call — no pitch, just value</li>
                 <li>✓ Written summary of AI opportunities</li>
                 <li>✓ No obligation to proceed</li>
               </ul>
+            </div>
+
+            {/* Small decorative image */}
+            <div className="relative rounded-2xl overflow-hidden h-48 shadow-md">
+              <Image
+                src="/images/team-collab.jpg"
+                alt="The Isle Collective team working together"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="font-heading font-semibold text-sm">Ready when you are.</p>
+              </div>
             </div>
           </div>
 

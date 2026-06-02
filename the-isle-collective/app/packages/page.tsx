@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
 import PricingCard from "@/components/PricingCard";
 import FAQ from "@/components/FAQ";
@@ -46,9 +47,18 @@ const faqs = [
 export default function Packages() {
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-navy to-ocean text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* Hero with image */}
+      <section className="relative text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[55vh] flex items-center">
+        <Image
+          src="/images/business-growth.jpg"
+          alt="Business growth strategy"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/92 via-navy/80 to-ocean/70" />
+        <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Pricing</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
             Flexible packages built around your stage of growth
@@ -67,6 +77,22 @@ export default function Packages() {
           ))}
         </div>
       </Section>
+
+      {/* Mid-page banner */}
+      <div className="relative h-56 overflow-hidden">
+        <Image
+          src="/images/ai-tech.jpg"
+          alt="AI technology powering business automation"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-ocean/80 flex items-center justify-center">
+          <p className="font-heading font-bold text-white text-xl sm:text-2xl text-center px-4">
+            All prices AUD · No lock-in contracts · Ongoing support included
+          </p>
+        </div>
+      </div>
 
       {/* FAQ */}
       <Section className="bg-white">
