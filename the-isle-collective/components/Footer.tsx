@@ -19,9 +19,9 @@ export default function Footer() {
             <Image
               src="/logos/ed712f47-d51f-458a-91d7-3502b922fc3c-cropped-light.png"
               alt="The Isle Collective"
-              width={140}
-              height={52}
-              className="h-14 w-auto mb-4"
+              width={420}
+              height={156}
+              className="h-44 w-auto mb-6"
             />
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               We help businesses grow with clear strategy, strong execution, and AI-powered systems.

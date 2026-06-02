@@ -64,6 +64,19 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-base/95 via-navy/80 to-ocean/50" />
+
+        {/* Watermark logo — left-anchored, fills section height */}
+        <div className="absolute left-0 inset-y-0 pointer-events-none select-none overflow-hidden">
+          <Image
+            src="/logos/ed712f47-d51f-458a-91d7-3502b922fc3c-cropped-dark.PNG"
+            alt=""
+            width={560}
+            height={800}
+            className="h-full w-auto opacity-[0.07] mix-blend-screen"
+            aria-hidden="true"
+          />
+        </div>
+
         <div className="relative max-w-4xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-4">AI-Powered Systems & Automation</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
