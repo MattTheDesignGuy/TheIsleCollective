@@ -93,19 +93,6 @@ export default function Contact() {
               </ul>
             </div>
 
-            <div className="relative rounded-2xl overflow-hidden h-48 ring-1 ring-white/10">
-              <Image
-                src="/images/team-collab.jpg"
-                alt="The Isle Collective team"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-base/70 to-transparent" />
-              <div className="absolute bottom-4 left-4">
-                <p className="font-heading font-semibold text-white text-sm">Ready when you are.</p>
-              </div>
-            </div>
           </div>
 
           {/* Form */}
