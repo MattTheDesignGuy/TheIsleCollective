@@ -34,8 +34,6 @@ jobs:
 
       - name: Build
         working-directory: the-isle-collective
-        env:
-          NEXT_PUBLIC_BASE_PATH: /TheIsleCollective
         run: npm run build
 
       - name: Add .nojekyll (prevents GitHub Pages from ignoring _next/ folder)
