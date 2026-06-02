@@ -60,8 +60,8 @@ export default function Services() {
       {/* Hero */}
       <section className="relative text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[60vh] flex items-center">
         <Image
-          src="/images/workflow-automation.jpg"
-          alt="Workflow and automation technology"
+          src="/images/services-d.jpg"
+          alt="Server infrastructure powering AI automation"
           fill
           priority
           className="object-cover object-center"
