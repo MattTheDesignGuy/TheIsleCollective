@@ -12,18 +12,18 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy text-white">
+    <footer className="bg-dark-surface border-t border-white/8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <Image
-              src="/logos/B_W-logo-on-Black_JPG.jpg"
+              src="/logos/FullLogo_NoBuffer.webp"
               alt="The Isle Collective"
               width={160}
               height={60}
-              className="h-14 w-auto mb-4"
+              className="h-14 w-auto [filter:brightness(0)_invert(1)] mb-4"
             />
-            <p className="text-sky/80 text-sm leading-relaxed max-w-xs">
+            <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               We help businesses grow with clear strategy, strong execution, and AI-powered systems.
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/70 hover:text-white text-sm transition-colors"
+                    className="text-white/40 hover:text-white text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:hello@theislecollective.co"
-                  className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors"
+                  className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
                 >
                   <Mail size={16} />
                   hello@theislecollective.co
@@ -63,7 +63,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:0431027770"
-                  className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors"
+                  className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
                 >
                   <Phone size={16} />
                   0431 027 770
@@ -74,14 +74,14 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors text-xs font-bold"
+                className="w-9 h-9 rounded-lg bg-white/8 hover:bg-white/15 border border-white/10 flex items-center justify-center transition-colors text-xs font-bold text-white/50 hover:text-white"
               >
                 in
               </a>
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors text-xs font-bold"
+                className="w-9 h-9 rounded-lg bg-white/8 hover:bg-white/15 border border-white/10 flex items-center justify-center transition-colors text-xs font-bold text-white/50 hover:text-white"
               >
                 ig
               </a>
@@ -89,8 +89,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/40 text-xs">
-          © {new Date().getFullYear()} The Isle Collective. All rights reserved. ABN: AU.
+        <div className="border-t border-white/8 mt-12 pt-8 text-center text-white/25 text-xs">
+          © {new Date().getFullYear()} The Isle Collective. All rights reserved.
         </div>
       </div>
     </footer>

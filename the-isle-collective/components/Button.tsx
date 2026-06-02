@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ComponentPropsWithoutRef } from "react";
 
 type Variant = "primary" | "secondary" | "outline";
 type Size = "sm" | "md" | "lg";
@@ -16,12 +15,12 @@ interface ButtonProps {
 }
 
 const base =
-  "inline-flex items-center gap-2 font-semibold rounded-xl transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2";
+  "inline-flex items-center gap-2 font-semibold rounded-xl transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-dark";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-navy text-white hover:bg-navy-dark focus-visible:ring-navy shadow-sm hover:shadow-md",
-  secondary: "bg-ocean text-white hover:bg-navy focus-visible:ring-ocean shadow-sm hover:shadow-md",
-  outline: "border-2 border-navy text-navy hover:bg-navy hover:text-white focus-visible:ring-navy",
+  primary: "bg-ocean text-white hover:bg-navy focus-visible:ring-ocean shadow-sm hover:shadow-md",
+  secondary: "bg-accent text-white hover:bg-accent/80 focus-visible:ring-accent shadow-sm hover:shadow-md",
+  outline: "border-2 border-white/40 text-white hover:bg-white/10 hover:border-white/70 focus-visible:ring-white/50",
 };
 
 const sizes: Record<Size, string> = {
@@ -40,7 +39,7 @@ export default function Button({
   type = "button",
   disabled,
 }: ButtonProps) {
-  const classes = `${base} ${variants[variant]} ${sizes[size]} ${className} ${disabled ? "opacity-60 cursor-not-allowed" : ""}`;
+  const classes = `${base} ${variants[variant]} ${sizes[size]} ${className} ${disabled ? "opacity-50 cursor-not-allowed" : ""}`;
 
   if (href) {
     return (

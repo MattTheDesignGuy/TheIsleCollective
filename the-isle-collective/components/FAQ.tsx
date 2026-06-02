@@ -17,9 +17,9 @@ export default function FAQ({ items }: FAQProps) {
   return (
     <div className="space-y-3">
       {items.map((item, i) => (
-        <div key={i} className="border border-mist rounded-xl overflow-hidden bg-white">
+        <div key={i} className="border border-white/10 rounded-xl overflow-hidden bg-dark-surface hover:border-white/20 transition-colors">
           <button
-            className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 font-heading font-medium text-navy hover:bg-mist/30 transition-colors"
+            className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 font-heading font-medium text-white hover:text-sky transition-colors"
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             aria-expanded={openIndex === i}
           >
@@ -32,7 +32,7 @@ export default function FAQ({ items }: FAQProps) {
             />
           </button>
           {openIndex === i && (
-            <div className="px-6 pb-5 text-sm text-charcoal/80 leading-relaxed border-t border-mist pt-4">
+            <div className="px-6 pb-5 text-sm text-white/60 leading-relaxed border-t border-white/8 pt-4">
               {item.answer}
             </div>
           )}

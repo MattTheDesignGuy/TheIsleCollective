@@ -80,14 +80,14 @@ export default function CaseStudy() {
       </section>
 
       {/* Problem — text left, real interior photo right */}
-      <Section className="bg-white">
+      <Section className="bg-dark">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">The Challenge</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+            <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-6">
               Drowning in leads,<br />missing opportunities
             </h2>
-            <div className="space-y-4 text-charcoal/70 leading-relaxed">
+            <div className="space-y-4 text-white/60 leading-relaxed">
               <p>
                 AJL Studio was growing — and that growth was creating a new problem. As a highly regarded interior design and architecture practice, enquiries were coming in from multiple channels: website forms, email, Instagram DMs, and referrals. Without a system to manage them, leads were falling through the cracks.
               </p>
@@ -113,7 +113,7 @@ export default function CaseStudy() {
       </Section>
 
       {/* Solution — founder photo left, checklist right */}
-      <Section className="bg-mist">
+      <Section className="bg-dark-surface border-y border-white/8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "3/4" }}>
             <Image
@@ -126,34 +126,34 @@ export default function CaseStudy() {
             <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent" />
             {/* Overlay badge */}
             <div className="absolute bottom-5 left-5 right-5">
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl px-5 py-3 flex items-center gap-3">
+              <div className="bg-dark/80 backdrop-blur-sm rounded-xl px-5 py-3 flex items-center gap-3 border border-white/10">
                 <Image
                   src="/images/ajl-logo.png"
                   alt="AJL Studio"
                   width={36}
                   height={30}
-                  className="h-8 w-auto"
+                  className="h-8 w-auto [filter:brightness(0)_invert(1)] opacity-80"
                 />
                 <div>
-                  <p className="font-heading font-bold text-navy text-sm leading-none">AJL Studio</p>
-                  <p className="text-charcoal/50 text-xs mt-0.5">Interior Design & Architecture</p>
+                  <p className="font-heading font-bold text-white text-sm leading-none">AJL Studio</p>
+                  <p className="text-white/40 text-xs mt-0.5">Interior Design & Architecture</p>
                 </div>
               </div>
             </div>
           </div>
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">The Solution</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+            <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-6">
               An end-to-end AI lead management system
             </h2>
-            <p className="text-charcoal/70 leading-relaxed mb-6">
+            <p className="text-white/60 leading-relaxed mb-6">
               The Isle Collective designed and built a complete AI-powered lead management and communication system, integrated with the studio&apos;s existing tools. No new software to learn — just automation working quietly in the background.
             </p>
             <ul className="space-y-3">
               {systemsImplemented.map((item) => (
-                <li key={item} className="flex items-start gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm">
+                <li key={item} className="flex items-start gap-3 bg-dark/60 border border-white/8 rounded-xl px-5 py-3.5">
                   <Check size={16} className="text-ocean mt-0.5 flex-shrink-0" />
-                  <span className="text-charcoal/80 text-sm">{item}</span>
+                  <span className="text-white/70 text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -161,16 +161,16 @@ export default function CaseStudy() {
         </div>
       </Section>
 
-      {/* Outcome + Testimonial — interior photo as backdrop */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* Outcome + Testimonial */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-dark">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">The Outcome</p>
-              <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+              <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-6">
                 A scalable, consistent,<br />efficient operation
               </h2>
-              <div className="space-y-4 text-charcoal/70 leading-relaxed">
+              <div className="space-y-4 text-white/60 leading-relaxed">
                 <p>
                   Within weeks of implementation, AJL Studio had transformed its operations. Every enquiry — regardless of where it came from — was automatically captured, summarised, and categorised. The team received clean, prioritised lead summaries instead of raw inbox chaos.
                 </p>
@@ -217,18 +217,21 @@ export default function CaseStudy() {
       </section>
 
       {/* CTA */}
-      <Section className="bg-navy text-white text-center">
-        <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
-          Want results like these?
-        </h2>
-        <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-          Book a free AI audit and find out exactly where AI can save your business the most time and money.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
-          <Button href="/packages" variant="outline" size="lg">View Packages</Button>
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center bg-dark-surface border-t border-white/8">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.12)_0%,_transparent_70%)]" />
+        <div className="relative max-w-2xl mx-auto">
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
+            Want results like these?
+          </h2>
+          <p className="text-white/60 text-lg mb-8">
+            Book a free AI audit and find out exactly where AI can save your business the most time and money.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+            <Button href="/packages" variant="outline" size="lg">View Packages</Button>
+          </div>
         </div>
-      </Section>
+      </section>
     </div>
   );
 }

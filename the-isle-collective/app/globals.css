@@ -8,6 +8,9 @@
   --color-mist: #E3F0FA;
   --color-charcoal: #1A1F2B;
   --color-accent: #E8964A;
+  --color-dark: #070E1C;
+  --color-dark-surface: #0D1728;
+  --color-dark-border: rgba(255, 255, 255, 0.08);
 
   --font-heading: var(--font-poppins);
   --font-body: var(--font-inter);
@@ -15,8 +18,8 @@
 
 body {
   font-family: var(--font-inter), system-ui, sans-serif;
-  color: #1A1F2B;
-  background: #ffffff;
+  color: rgba(255, 255, 255, 0.85);
+  background: #070E1C;
 }
 
 h1, h2, h3, h4, h5, h6 {

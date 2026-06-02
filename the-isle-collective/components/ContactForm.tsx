@@ -34,14 +34,16 @@ export default function ContactForm() {
   }
 
   const field =
-    "w-full px-4 py-3 rounded-xl border border-mist bg-white text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-ocean focus:border-ocean transition text-sm";
+    "w-full px-4 py-3 rounded-xl border border-white/10 bg-dark/60 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-ocean focus:border-ocean transition text-sm";
 
   if (status === "success") {
     return (
-      <div className="bg-mist rounded-2xl p-10 text-center">
-        <div className="text-4xl mb-4">✓</div>
-        <h3 className="font-heading font-bold text-navy text-xl mb-2">Message sent!</h3>
-        <p className="text-charcoal/70 text-sm">
+      <div className="bg-ocean/10 border border-ocean/20 rounded-2xl p-10 text-center">
+        <div className="w-14 h-14 rounded-full bg-ocean/20 border border-ocean/30 flex items-center justify-center mx-auto mb-4">
+          <span className="text-sky text-2xl">✓</span>
+        </div>
+        <h3 className="font-heading font-bold text-white text-xl mb-2">Message sent!</h3>
+        <p className="text-white/60 text-sm">
           Thanks for reaching out. We&apos;ll be in touch within one business day.
         </p>
       </div>
@@ -51,7 +53,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-4">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1">
+        <label htmlFor="name" className="block text-sm font-medium text-white/70 mb-1">
           Full Name <span className="text-accent">*</span>
         </label>
         <input
@@ -66,7 +68,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1">
+        <label htmlFor="email" className="block text-sm font-medium text-white/70 mb-1">
           Email <span className="text-accent">*</span>
         </label>
         <input
@@ -81,7 +83,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="business" className="block text-sm font-medium text-charcoal mb-1">
+        <label htmlFor="business" className="block text-sm font-medium text-white/70 mb-1">
           Business Name
         </label>
         <input
@@ -95,7 +97,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-charcoal mb-1">
+        <label htmlFor="message" className="block text-sm font-medium text-white/70 mb-1">
           Message <span className="text-accent">*</span>
         </label>
         <textarea

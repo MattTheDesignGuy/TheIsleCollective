@@ -31,7 +31,9 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
+        scrolled
+          ? "bg-dark/98 shadow-lg shadow-black/40 border-b border-white/5"
+          : "bg-dark/80 backdrop-blur-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +44,7 @@ export default function Header() {
               alt="The Isle Collective"
               width={160}
               height={60}
-              className="h-12 w-auto"
+              className="h-12 w-auto [filter:brightness(0)_invert(1)]"
               priority
             />
           </Link>
@@ -54,8 +56,8 @@ export default function Header() {
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-navy"
-                    : "text-charcoal hover:text-navy"
+                    ? "text-sky"
+                    : "text-white/60 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -70,7 +72,7 @@ export default function Header() {
           </div>
 
           <button
-            className="lg:hidden p-2 text-charcoal"
+            className="lg:hidden p-2 text-white/70 hover:text-white"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
@@ -80,14 +82,14 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden bg-white border-t border-mist px-4 pb-6 pt-4 shadow-lg">
+        <div className="lg:hidden bg-dark-surface border-t border-white/10 px-4 pb-6 pt-4 shadow-xl">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`text-base font-medium py-1 ${
-                  pathname === link.href ? "text-navy" : "text-charcoal"
+                  pathname === link.href ? "text-sky" : "text-white/70 hover:text-white"
                 }`}
               >
                 {link.label}

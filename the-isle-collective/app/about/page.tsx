@@ -32,7 +32,8 @@ const benefits = [
 export default function About() {
   return (
     <div className="pt-20">
-      {/* Hero with image */}
+
+      {/* Hero */}
       <section className="relative text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[60vh] flex items-center">
         <Image
           src="/images/team-collab.jpg"
@@ -42,22 +43,22 @@ export default function About() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/80 to-ocean/70" />
+        <div className="absolute inset-0 bg-gradient-to-br from-dark/95 via-navy/85 to-ocean/60" />
         <div className="relative max-w-3xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">About Us</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
             We exist to help businesses reclaim their time
           </h1>
-          <p className="text-white/80 text-lg leading-relaxed">
+          <p className="text-white/70 text-lg leading-relaxed">
             The Isle Collective is an Australian consultancy that designs and implements AI-powered systems for businesses ready to grow smarter — not harder.
           </p>
         </div>
       </section>
 
-      {/* Philosophy — split with image */}
-      <Section id="philosophy" className="bg-white">
+      {/* Philosophy */}
+      <Section id="philosophy" className="bg-dark">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl order-2 lg:order-1">
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10 order-2 lg:order-1">
             <Image
               src="/images/office-modern.jpg"
               alt="Modern collaborative workspace"
@@ -65,14 +66,14 @@ export default function About() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
           </div>
           <div className="order-1 lg:order-2">
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Our Philosophy</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+            <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-6">
               Automate the repetitive.<br />Amplify the valuable.
             </h2>
-            <div className="space-y-4 text-charcoal/70 leading-relaxed">
+            <div className="space-y-4 text-white/60 leading-relaxed">
               <p>
                 We believe the best businesses aren&apos;t the ones that work the hardest — they&apos;re the ones that work the smartest. Every hour spent on manual admin is an hour not spent on clients, strategy, or growth.
               </p>
@@ -96,21 +97,21 @@ export default function About() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-navy/80" />
+        <div className="absolute inset-0 bg-dark/88" />
         <div className="relative max-w-3xl mx-auto text-center text-white">
-          <blockquote className="font-heading font-medium text-2xl sm:text-3xl italic leading-relaxed">
+          <blockquote className="font-heading font-medium text-2xl sm:text-3xl italic leading-relaxed text-white/90">
             &ldquo;AI should feel like hiring the most efficient person you&apos;ve ever worked with — one who never forgets, never sleeps, and always follows the process.&rdquo;
           </blockquote>
-          <div className="mt-6 text-sky/70 text-sm">— The Isle Collective</div>
+          <div className="mt-6 text-sky/60 text-sm">— The Isle Collective</div>
         </div>
       </div>
 
       {/* Process */}
-      <Section id="process" className="bg-mist">
+      <Section id="process" className="bg-dark-surface border-y border-white/8">
         <div className="text-center mb-12">
           <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">How We Work</p>
-          <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl">Our 5-Step Process</h2>
-          <p className="text-charcoal/70 mt-4 max-w-xl mx-auto">
+          <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl">Our 5-Step Process</h2>
+          <p className="text-white/50 mt-4 max-w-xl mx-auto">
             A clear, structured approach — from first conversation to a fully running automation system.
           </p>
         </div>
@@ -122,23 +123,23 @@ export default function About() {
       </Section>
 
       {/* Why Us */}
-      <Section id="why-us" className="bg-white">
+      <Section id="why-us" className="bg-dark">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Why Choose Us</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-8">
+            <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-8">
               Built for results, not complexity
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {benefits.map((b) => (
-                <div key={b} className="flex items-start gap-3 bg-mist rounded-xl px-5 py-4">
+                <div key={b} className="flex items-start gap-3 bg-dark-surface border border-white/8 rounded-xl px-5 py-4">
                   <Check size={18} className="text-ocean mt-0.5 flex-shrink-0" />
-                  <span className="text-charcoal/80 text-sm">{b}</span>
+                  <span className="text-white/70 text-sm">{b}</span>
                 </div>
               ))}
             </div>
           </div>
-          <div className="relative rounded-2xl overflow-hidden aspect-square shadow-xl">
+          <div className="relative rounded-2xl overflow-hidden aspect-square shadow-2xl ring-1 ring-white/10">
             <Image
               src="/images/business-growth.jpg"
               alt="Business growth and strategy"
@@ -146,23 +147,24 @@ export default function About() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent" />
           </div>
         </div>
       </Section>
 
       {/* CTA */}
-      <Section className="bg-navy text-white text-center">
-        <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
-          Ready to see what&apos;s possible?
-        </h2>
-        <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-          Book a free AI audit — no commitment, no jargon. Just a clear picture of where AI can unlock value in your business.
-        </p>
-        <Button href="/contact" variant="secondary" size="lg">
-          Book a Free AI Audit
-        </Button>
-      </Section>
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center bg-dark-surface border-t border-white/8">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.12)_0%,_transparent_70%)]" />
+        <div className="relative max-w-2xl mx-auto">
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
+            Ready to see what&apos;s possible?
+          </h2>
+          <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
+            Book a free AI audit — no commitment, no jargon. Just a clear picture of where AI can unlock value in your business.
+          </p>
+          <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+        </div>
+      </section>
     </div>
   );
 }

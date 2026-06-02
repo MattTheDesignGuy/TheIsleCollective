@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { Clock, TrendingUp, Mail, BarChart3, Search, Lightbulb, Wrench, Rocket, Scale, Check, ArrowRight } from "lucide-react";
 import Section from "@/components/Section";
 import ProcessStep from "@/components/ProcessStep";
@@ -53,8 +52,9 @@ const featuredPackages = packages.filter((p) =>
 export default function Home() {
   return (
     <div className="pt-20">
+
       {/* Hero */}
-      <section className="relative text-white py-36 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[80vh] flex items-center">
+      <section className="relative text-white py-36 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[85vh] flex items-center">
         <Image
           src="/images/hero-ocean.jpg"
           alt="Coastal ocean — calm and expansive"
@@ -63,32 +63,24 @@ export default function Home() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Navy gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/90 via-navy/80 to-ocean/70" />
-        {/* Subtle texture overlay */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--color-sky)_0%,_transparent_60%)]" />
-
+        <div className="absolute inset-0 bg-gradient-to-br from-dark/95 via-navy/80 to-ocean/50" />
         <div className="relative max-w-4xl mx-auto text-center">
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-4">AI-Powered Systems & Automation</p>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
             We help businesses save time, reduce admin, and grow through AI-powered systems.
           </h1>
-          <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
+          <p className="text-white/70 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
             Australian-based consultancy delivering practical AI automation — so you can focus on the work that matters most.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="secondary" size="lg">
-              Book a Free AI Audit
-            </Button>
-            <Button href="/packages" variant="outline" size="lg">
-              View Packages
-            </Button>
+            <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+            <Button href="/packages" variant="outline" size="lg">View Packages</Button>
           </div>
         </div>
       </section>
 
       {/* Value Props */}
-      <Section className="bg-mist">
+      <Section className="bg-dark-surface border-y border-white/8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {valueProps.map((vp) => (
             <ValueProp key={vp.title} {...vp} />
@@ -96,22 +88,22 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Philosophy — split with image */}
-      <Section className="bg-white">
+      {/* Philosophy */}
+      <Section className="bg-dark">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Our Philosophy</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+            <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-6">
               Automate the repetitive.<br />Amplify the valuable.
             </h2>
-            <p className="text-charcoal/70 text-lg leading-relaxed mb-6">
+            <p className="text-white/60 text-lg leading-relaxed mb-6">
               We believe every business deserves to reclaim its time. The Isle Collective designs AI-powered systems that handle the routine — freeing you and your team to focus on the relationships, creativity, and strategy that truly drive growth.
             </p>
-            <p className="text-charcoal/70 text-lg leading-relaxed">
+            <p className="text-white/60 text-lg leading-relaxed">
               We&apos;re here to empower people, not replace them.
             </p>
           </div>
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10">
             <Image
               src="/images/office-modern.jpg"
               alt="Modern collaborative workspace"
@@ -119,16 +111,16 @@ export default function Home() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent" />
           </div>
         </div>
       </Section>
 
       {/* Process */}
-      <Section className="bg-mist">
+      <Section className="bg-dark-surface border-y border-white/8">
         <div className="text-center mb-12">
           <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">How It Works</p>
-          <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl">Our Process</h2>
+          <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl">Our Process</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {processSteps.map((step) => (
@@ -137,7 +129,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* What We Deliver — full-bleed image banner between */}
+      {/* Full-bleed AI banner */}
       <div className="relative h-64 sm:h-80 overflow-hidden">
         <Image
           src="/images/ai-tech.jpg"
@@ -146,43 +138,42 @@ export default function Home() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-navy/70 flex items-center justify-center">
-          <div className="text-center text-white px-4">
-            <p className="font-heading font-extrabold text-2xl sm:text-4xl">
-              Practical AI. Real outcomes. Zero jargon.
-            </p>
-          </div>
+        <div className="absolute inset-0 bg-dark/75 flex items-center justify-center">
+          <p className="font-heading font-extrabold text-white text-2xl sm:text-4xl text-center px-4">
+            Practical AI. Real outcomes. Zero jargon.
+          </p>
         </div>
       </div>
 
-      <Section className="bg-white">
+      {/* What We Deliver */}
+      <Section className="bg-dark">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">What We Deliver</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+            <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-6">
               End-to-end AI systems for growing businesses
             </h2>
             <ul className="space-y-3">
               {deliverables.map((d) => (
                 <li key={d} className="flex items-center gap-3">
-                  <span className="w-6 h-6 rounded-full bg-mist flex items-center justify-center flex-shrink-0">
-                    <ArrowRight size={12} className="text-ocean" />
+                  <span className="w-6 h-6 rounded-full bg-ocean/20 border border-ocean/30 flex items-center justify-center flex-shrink-0">
+                    <ArrowRight size={12} className="text-sky" />
                   </span>
-                  <span className="text-charcoal/80 font-medium">{d}</span>
+                  <span className="text-white/80 font-medium">{d}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
             <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Why The Isle Collective</p>
-            <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-6">
+            <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-6">
               Real results, no fluff
             </h2>
             <ul className="space-y-3">
               {benefits.map((b) => (
                 <li key={b} className="flex items-start gap-3">
                   <Check size={18} className="text-ocean mt-0.5 flex-shrink-0" />
-                  <span className="text-charcoal/80">{b}</span>
+                  <span className="text-white/70">{b}</span>
                 </li>
               ))}
             </ul>
@@ -191,11 +182,11 @@ export default function Home() {
       </Section>
 
       {/* Featured Packages */}
-      <Section className="bg-mist">
+      <Section className="bg-dark-surface border-y border-white/8">
         <div className="text-center mb-12">
           <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Flexible Pricing</p>
-          <h2 className="font-heading font-bold text-navy text-3xl sm:text-4xl mb-4">Popular Packages</h2>
-          <p className="text-charcoal/70 max-w-xl mx-auto">
+          <h2 className="font-heading font-bold text-white text-3xl sm:text-4xl mb-4">Popular Packages</h2>
+          <p className="text-white/50 max-w-xl mx-auto">
             Flexible packages built around your stage of growth — start with an audit or go all-in.
           </p>
         </div>
@@ -205,13 +196,11 @@ export default function Home() {
           ))}
         </div>
         <div className="text-center">
-          <Button href="/packages" variant="outline">
-            View All Packages
-          </Button>
+          <Button href="/packages" variant="outline">View All Packages</Button>
         </div>
       </Section>
 
-      {/* Case Study Snapshot — AJL Studio branded image */}
+      {/* Case Study — AJL branded image */}
       <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <Image
           src="/images/ajl-portfolio.png"
@@ -220,22 +209,22 @@ export default function Home() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-navy/85" />
+        <div className="absolute inset-0 bg-dark/85" />
         <div className="relative max-w-3xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex items-center justify-center mb-6">
             <Image
               src="/images/ajl-logo.png"
               alt="AJL Studio"
               width={56}
               height={46}
-              className="h-12 w-auto invert brightness-200 opacity-90"
+              className="h-12 w-auto [filter:brightness(0)_invert(1)] opacity-80"
             />
           </div>
           <p className="text-sky font-semibold text-sm uppercase tracking-widest mb-3">Case Study</p>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-6">
             AJ Lawson Designs / AJL Studio
           </h2>
-          <p className="text-white/80 text-lg mb-8 leading-relaxed">
+          <p className="text-white/70 text-lg mb-8 leading-relaxed">
             A leading design studio was drowning in manual lead management and inbox chaos. We implemented an end-to-end AI system — automated lead qualification, AI-drafted email responses, and workflow automation — transforming their operations.
           </p>
           <div className="grid grid-cols-3 gap-6 mb-10">
@@ -246,28 +235,27 @@ export default function Home() {
             ].map((item) => (
               <div key={item.label} className="text-center">
                 <div className="font-heading font-extrabold text-3xl text-sky">{item.stat}</div>
-                <div className="text-white/60 text-sm mt-1">{item.label}</div>
+                <div className="text-white/50 text-sm mt-1">{item.label}</div>
               </div>
             ))}
           </div>
-          <Button href="/case-study" variant="secondary">
-            Read the Full Case Study
-          </Button>
+          <Button href="/case-study" variant="secondary">Read the Full Case Study</Button>
         </div>
       </section>
 
       {/* Closing CTA */}
-      <Section className="bg-gradient-to-r from-ocean to-navy text-white text-center">
-        <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
-          Ready to reclaim your time?
-        </h2>
-        <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-          Book a free AI audit and discover exactly where automation can unlock the most value in your business.
-        </p>
-        <Button href="/contact" variant="secondary" size="lg">
-          Book a Free AI Audit
-        </Button>
-      </Section>
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center overflow-hidden bg-dark-surface border-t border-white/8">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.15)_0%,_transparent_70%)]" />
+        <div className="relative max-w-2xl mx-auto">
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">
+            Ready to reclaim your time?
+          </h2>
+          <p className="text-white/60 text-lg mb-8">
+            Book a free AI audit and discover exactly where automation can unlock the most value in your business.
+          </p>
+          <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+        </div>
+      </section>
     </div>
   );
 }

@@ -11,15 +11,15 @@ export default function PricingCard({ pkg }: PricingCardProps) {
 
   return (
     <div
-      className={`relative rounded-2xl flex flex-col h-full transition-shadow duration-300 hover:shadow-xl ${
+      className={`relative rounded-2xl flex flex-col h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${
         isPopular
-          ? "bg-navy text-white shadow-2xl ring-2 ring-accent"
-          : "bg-white text-charcoal shadow-md border border-mist"
+          ? "bg-ocean/20 border border-ocean/60 shadow-xl shadow-ocean/10 ring-1 ring-ocean/30"
+          : "bg-dark-surface border border-white/10 shadow-md hover:border-white/20"
       }`}
     >
       {isPopular && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <span className="bg-accent text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow">
+          <span className="bg-accent text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg shadow-accent/30">
             Most Popular
           </span>
         </div>
@@ -27,43 +27,43 @@ export default function PricingCard({ pkg }: PricingCardProps) {
 
       <div className="p-8 flex flex-col h-full">
         <div className="mb-6">
-          <h3 className={`font-heading font-bold text-xl mb-2 ${isPopular ? "text-white" : "text-navy"}`}>
+          <h3 className={`font-heading font-bold text-xl mb-2 ${isPopular ? "text-sky" : "text-white"}`}>
             {name}
           </h3>
-          <p className={`text-sm leading-relaxed ${isPopular ? "text-sky" : "text-charcoal/70"}`}>
+          <p className={`text-sm leading-relaxed ${isPopular ? "text-sky/70" : "text-white/50"}`}>
             {tagline}
           </p>
         </div>
 
-        <div className={`mb-6 pb-6 border-b ${isPopular ? "border-white/20" : "border-mist"}`}>
+        <div className={`mb-6 pb-6 border-b ${isPopular ? "border-ocean/30" : "border-white/10"}`}>
           {setupPrice !== null ? (
             <>
-              <div className={`text-3xl font-heading font-bold ${isPopular ? "text-white" : "text-navy"}`}>
+              <div className={`text-3xl font-heading font-bold ${isPopular ? "text-white" : "text-sky"}`}>
                 ${setupPrice.toLocaleString()}
-                <span className={`text-sm font-normal ml-1 ${isPopular ? "text-sky" : "text-charcoal/60"}`}>
+                <span className={`text-sm font-normal ml-1 ${isPopular ? "text-sky/60" : "text-white/40"}`}>
                   {setupLabel ?? "setup"}
                 </span>
               </div>
               {monthlyPrice > 0 && (
-                <div className={`text-base mt-1 ${isPopular ? "text-sky" : "text-charcoal/70"}`}>
+                <div className={`text-base mt-1 ${isPopular ? "text-sky/80" : "text-white/60"}`}>
                   + ${monthlyPrice}/month
                 </div>
               )}
             </>
           ) : (
             <>
-              <div className={`text-3xl font-heading font-bold ${isPopular ? "text-white" : "text-navy"}`}>
+              <div className={`text-3xl font-heading font-bold ${isPopular ? "text-white" : "text-sky"}`}>
                 {setupLabel}
-                <span className={`text-sm font-normal ml-1 ${isPopular ? "text-sky" : "text-charcoal/60"}`}>
+                <span className={`text-sm font-normal ml-1 ${isPopular ? "text-sky/60" : "text-white/40"}`}>
                   setup
                 </span>
               </div>
-              <div className={`text-base mt-1 ${isPopular ? "text-sky" : "text-charcoal/70"}`}>
+              <div className={`text-base mt-1 ${isPopular ? "text-sky/80" : "text-white/60"}`}>
                 + ${monthlyPrice}/month
               </div>
             </>
           )}
-          <div className={`text-xs mt-1 ${isPopular ? "text-white/50" : "text-charcoal/40"}`}>All prices AUD</div>
+          <div className={`text-xs mt-1 ${isPopular ? "text-white/30" : "text-white/25"}`}>All prices AUD</div>
         </div>
 
         <ul className="space-y-2.5 mb-6 flex-1">
@@ -73,14 +73,14 @@ export default function PricingCard({ pkg }: PricingCardProps) {
                 size={16}
                 className={`mt-0.5 flex-shrink-0 ${isPopular ? "text-accent" : "text-ocean"}`}
               />
-              <span className={`text-sm ${isPopular ? "text-white/90" : "text-charcoal/80"}`}>{item}</span>
+              <span className={`text-sm ${isPopular ? "text-white/85" : "text-white/70"}`}>{item}</span>
             </li>
           ))}
         </ul>
 
         {idealFor && (
-          <p className={`text-xs mb-4 ${isPopular ? "text-sky/80" : "text-charcoal/60"}`}>
-            <strong>Ideal for:</strong> {idealFor}
+          <p className={`text-xs mb-4 ${isPopular ? "text-sky/70" : "text-white/40"}`}>
+            <strong className={isPopular ? "text-sky" : "text-white/60"}>Ideal for:</strong> {idealFor}
           </p>
         )}
 
@@ -91,7 +91,7 @@ export default function PricingCard({ pkg }: PricingCardProps) {
         )}
 
         {optionalNote && (
-          <p className={`text-xs mb-4 ${isPopular ? "text-white/50" : "text-charcoal/40"}`}>
+          <p className={`text-xs mb-4 ${isPopular ? "text-white/30" : "text-white/25"}`}>
             {optionalNote}
           </p>
         )}
