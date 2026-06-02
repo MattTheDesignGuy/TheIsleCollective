@@ -145,8 +145,8 @@ export default function About() {
           </div>
           <div className="relative rounded-2xl overflow-hidden aspect-square shadow-2xl ring-1 ring-white/10">
             <Image
-              src="/images/about-why-e.jpg"
-              alt="Modern premium office space"
+              src="/images/pricing-hero.jpg"
+              alt="Analytics dashboard on laptop"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
