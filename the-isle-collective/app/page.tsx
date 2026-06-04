@@ -78,7 +78,7 @@ export default function Home() {
                 Australian-based consultancy delivering practical AI automation so you can focus on the work that matters most.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+                <Button href="/contact" variant="secondary" size="lg">Book a Consult</Button>
                 <Button href="/packages" variant="outline" size="lg">View Packages</Button>
               </div>
             </div>
@@ -333,9 +333,9 @@ export default function Home() {
         <div className="relative max-w-2xl mx-auto">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">Ready to reclaim your time?</h2>
           <p className="text-white/60 text-lg mb-8">
-            Book a free AI audit and discover exactly where automation can unlock the most value in your business.
+            Book a consult and discover exactly where automation can unlock the most value in your business.
           </p>
-          <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+          <Button href="/contact" variant="secondary" size="lg">Book a Consult</Button>
         </div>
       </section>
     </div>

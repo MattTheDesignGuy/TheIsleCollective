@@ -232,10 +232,10 @@ export default function CaseStudy() {
         <div className="relative max-w-2xl mx-auto">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">Want results like these?</h2>
           <p className="text-white/60 text-lg mb-8">
-            Book a free AI audit and find out exactly where AI can save your business the most time and money.
+            Book a consult and find out exactly where AI can save your business the most time and money.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+            <Button href="/contact" variant="secondary" size="lg">Book a Consult</Button>
             <Button href="/packages" variant="outline" size="lg">View Packages</Button>
           </div>
         </div>

@@ -164,9 +164,9 @@ export default function About() {
             Ready to see what is possible?
           </h2>
           <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
-            Book a free AI audit, no commitment, no jargon. Just a clear picture of where AI can unlock value in your business.
+            Book a consult, no commitment, no jargon. Just a clear picture of where AI can unlock value in your business.
           </p>
-          <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+          <Button href="/contact" variant="secondary" size="lg">Book a Consult</Button>
         </div>
       </section>
     </div>

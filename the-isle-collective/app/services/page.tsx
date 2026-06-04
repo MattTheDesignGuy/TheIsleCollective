@@ -157,7 +157,7 @@ export default function Services() {
             Our AI Audit is the perfect first step, a clear picture of where automation can make the biggest difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+            <Button href="/contact" variant="secondary" size="lg">Book a Consult</Button>
             <Button href="/packages" variant="outline" size="lg">View Packages</Button>
           </div>
         </div>

@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with The Isle Collective. Book a free AI audit or ask us anything.",
+  description: "Get in touch with The Isle Collective. Book a consultation and discover how AI automation can transform your business.",
 };
 
 export default function Contact() {
@@ -41,11 +41,11 @@ export default function Contact() {
           {/* Contact Info */}
           <div>
             <h2 className="font-heading font-bold text-white text-2xl sm:text-3xl mb-6">
-              Book a Free AI Audit
+              Book a Consultation
             </h2>
             <p className="text-white/60 leading-relaxed mb-8">
-              Our free AI audit is a 45-minute conversation where we map your current workflows and identify
-              where AI can save you the most time. No commitment, no jargon, just clarity.
+              Our paid consultation is a focused 60-minute session where we map your current workflows,
+              identify your highest-impact AI opportunities, and give you a clear roadmap — no fluff, no jargon.
             </p>
 
             <div className="space-y-3 mb-10">
@@ -82,13 +82,13 @@ export default function Contact() {
                   <span className="text-ocean font-bold">+</span> Response within one business day
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-ocean font-bold">+</span> 45-minute audit call, no pitch, just value
+                  <span className="text-ocean font-bold">+</span> 60-minute paid consultation — focused and actionable
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-ocean font-bold">+</span> Written summary of AI opportunities
+                  <span className="text-ocean font-bold">+</span> Written AI opportunity roadmap included
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-ocean font-bold">+</span> No obligation to proceed
+                  <span className="text-ocean font-bold">+</span> Pricing confirmed before your session
                 </li>
               </ul>
             </div>
@@ -97,7 +97,7 @@ export default function Contact() {
 
           {/* Form */}
           <div className="bg-surface border border-white/10 rounded-2xl p-8 shadow-xl shadow-black/20 self-start">
-            <h2 className="font-heading font-bold text-white text-xl mb-6">Send us a message</h2>
+            <h2 className="font-heading font-bold text-white text-xl mb-6">Tell us about your business</h2>
             <ContactForm />
           </div>
 

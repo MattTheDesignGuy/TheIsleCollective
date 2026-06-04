@@ -325,9 +325,9 @@ export default function CredentialsPage() {
             Ready to work with a certified AI partner?
           </h2>
           <p className="text-white/60 text-lg mb-8">
-            Book a free AI audit and we&apos;ll show you exactly where automation can save you time and money.
+            Book a consult and we&apos;ll show you exactly where automation can save you time and money.
           </p>
-          <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+          <Button href="/contact" variant="secondary" size="lg">Book a Consult</Button>
         </div>
       </section>
 

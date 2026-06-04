@@ -108,9 +108,9 @@ export default function Packages() {
             Not sure which package is right for you?
           </h2>
           <p className="text-white/60 text-lg mb-8">
-            Book a free AI audit and we will map your workflows and recommend the right starting point.
+            Book a consult and we will map your workflows and recommend the right starting point.
           </p>
-          <Button href="/contact" variant="secondary" size="lg">Book a Free AI Audit</Button>
+          <Button href="/contact" variant="secondary" size="lg">Book a Consult</Button>
         </div>
       </section>
     </div>

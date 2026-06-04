@@ -68,7 +68,7 @@ export default function Header() {
 
           <div className="hidden lg:block">
             <Button href="/contact" variant="primary" size="sm">
-              Book a Free AI Audit
+              Book a Consult
             </Button>
           </div>
 
@@ -98,7 +98,7 @@ export default function Header() {
             ))}
             <div className="pt-2">
               <Button href="/contact" variant="primary" className="w-full justify-center">
-                Book a Free AI Audit
+                Book a Consult
               </Button>
             </div>
           </nav>
