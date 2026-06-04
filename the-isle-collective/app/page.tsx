@@ -280,6 +280,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Certified AI & Automation Partner strip */}
+      <section className="bg-base border-y border-white/8 py-14 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+
+          {/* Left: statement */}
+          <div className="text-center lg:text-left flex-1">
+            <p className="text-ocean font-semibold text-sm uppercase tracking-widest mb-3">Verified Expertise</p>
+            <h2 className="font-heading font-bold text-white text-2xl sm:text-3xl mb-3">
+              Certified AI & Automation Partner
+            </h2>
+            <p className="text-white/50 text-base max-w-md mx-auto lg:mx-0">
+              Backed by certifications from Microsoft and Anthropic — the teams building the world&apos;s leading AI platforms.
+            </p>
+            <div className="mt-5">
+              <Button href="/credentials" variant="outline" size="sm">View All Credentials</Button>
+            </div>
+          </div>
+
+          {/* Right: cert badges */}
+          <div className="flex flex-col gap-4 w-full lg:w-auto lg:flex-1">
+            {/* Microsoft row */}
+            <div className="bg-surface border border-white/8 rounded-2xl px-6 py-4 flex items-center gap-4">
+              <div className="w-10 h-10 rounded-lg bg-[#00A4EF]/10 border border-[#00A4EF]/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-lg">Ⓜ</span>
+              </div>
+              <div>
+                <p className="text-white font-semibold text-sm">Microsoft</p>
+                <p className="text-white/40 text-xs">6 AI Learning Achievements · June 2026</p>
+              </div>
+              <ArrowRight size={14} className="text-white/20 ml-auto" />
+            </div>
+            {/* Anthropic row */}
+            <div className="bg-surface border border-white/8 rounded-2xl px-6 py-4 flex items-center gap-4">
+              <div className="w-10 h-10 rounded-lg bg-orange-400/10 border border-orange-400/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-lg">🤖</span>
+              </div>
+              <div>
+                <p className="text-white font-semibold text-sm">Anthropic</p>
+                <p className="text-white/40 text-xs">AI Fluency Certificates · 2026</p>
+              </div>
+              <ArrowRight size={14} className="text-white/20 ml-auto" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Closing CTA */}
       <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center overflow-hidden bg-surface border-t border-white/8">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,111,168,0.15)_0%,_transparent_70%)]" />
