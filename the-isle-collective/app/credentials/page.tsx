@@ -72,6 +72,14 @@ const anthropicCerts = [
     color: "from-[#4f9e5e]/20 to-[#2d6e3a]/10",
     border: "border-[#4f9e5e]/30",
   },
+  {
+    title: "AI Fluency: Framework & Foundations",
+    issuer: "Anthropic × UCC × Ringling College",
+    date: "2026",
+    file: "/credentials/anthropic-ai-fluency-framework.pdf",
+    color: "from-[#6b7e5e]/20 to-[#4a5a3a]/10",
+    border: "border-[#6b7e5e]/30",
+  },
 ];
 
 const automations = [
@@ -134,7 +142,7 @@ export default function CredentialsPage() {
             <div className="flex items-center gap-2 text-white/40 text-sm">
               <span className="font-semibold text-white/70">Anthropic</span>
               <span>·</span>
-              <span>2 Certificates</span>
+              <span>3 Certificates</span>
             </div>
           </div>
         </div>
