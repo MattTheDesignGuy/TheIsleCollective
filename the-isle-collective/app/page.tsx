@@ -90,7 +90,7 @@ export default function Home() {
                 alt=""
                 width={480}
                 height={680}
-                className="h-[70vh] w-auto opacity-100 mix-blend-screen"
+                className="h-auto w-full max-h-[70vh] object-contain opacity-100 mix-blend-screen"
                 aria-hidden="true"
               />
             </div>
