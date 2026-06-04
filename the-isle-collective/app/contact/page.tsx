@@ -36,10 +36,10 @@ export default function Contact() {
       </section>
 
       <Section className="bg-base">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-16 items-stretch">
 
           {/* Contact Info */}
-          <div>
+          <div className="flex flex-col">
             <h2 className="font-heading font-bold text-white text-2xl sm:text-3xl mb-6">
               Book a Consultation
             </h2>
@@ -93,8 +93,8 @@ export default function Contact() {
               </ul>
             </div>
 
-            {/* Consultation image */}
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10">
+            {/* Consultation image — grows to fill remaining height */}
+            <div className="relative flex-1 min-h-48 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
               <Image
                 src="/images/team-collab.jpg"
                 alt="Consultation session"
