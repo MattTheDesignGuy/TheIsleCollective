@@ -214,7 +214,7 @@ export default function CredentialsPage() {
             Certificates of completion from Anthropic — the team behind Claude AI.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {anthropicCerts.map((cert) => (
             <Link
               key={cert.title}
